@@ -3,6 +3,7 @@ package com.xinrui.controller;
 
 import com.xinrui.component.AuthorMapping;
 import com.xinrui.data.model.UserInfoDTO;
+import com.xinrui.data.model.UserMybatisDTO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -12,6 +13,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @Api(tags = "用户信息管理 API")
 @RestController
@@ -47,4 +50,11 @@ public class UserManageController extends BaseController{
         return am;
     }
 
+
+
+    @GetMapping("/user")
+    @ResponseBody
+    public List<UserMybatisDTO> getUser(){
+        return userInfoService.getUser();
+    }
 }

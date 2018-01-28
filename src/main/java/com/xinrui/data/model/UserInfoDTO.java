@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 
 import java.io.Serializable;
 
-@ApiModel
+@ApiModel(value = "用户信息")
 public class UserInfoDTO implements Serializable{
 
     @ApiModelProperty(value = "用户编号", position = 0)

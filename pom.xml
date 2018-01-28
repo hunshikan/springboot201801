@@ -82,11 +82,11 @@
 		</dependency>
 
 		<!-- fastJSON -->
-		<!--<dependency>
+		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>1.2.9</version>
-		</dependency>-->
+		</dependency>
 
 		<!--连接数据源 MyBatis, MySql, Jdbc -->
 		<dependency>
